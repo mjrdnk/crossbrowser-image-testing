@@ -1,7 +1,8 @@
-import { Request, Response } from "express";
 import fs from "fs";
-import { availableBrowsers, textEncoding } from "../constants";
 import path from "path";
+import { Request, Response } from "express";
+import { availableBrowsers, textEncoding } from "../constants";
+
 export default function (req: Request, res: Response) {
   try {
     // check if there are needed files
