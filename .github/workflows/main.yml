@@ -23,3 +23,8 @@ jobs:
           node-version: '12.x'
       - name: Install dependencies
         run: yarn --frozen-lockfile
+      - name: Build
+        run: yarn build
+      - name: Deploy to Heroku
+        uses: AkhileshNS/heroku-deploy@v3.12.12
+
